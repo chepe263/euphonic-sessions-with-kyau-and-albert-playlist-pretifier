@@ -1,0 +1,12 @@
+{
+  "name": "euphonic-sessions-with-kyau-and-albert-playlist-prettifier",
+  "version": "1.0.0",
+  "description": "Take the file input.txt (with unformated playlist), format it and create output.txt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start": "node index.js"
+  },
+  "author": "chepe263",
+  "license": "ISC"
+}
