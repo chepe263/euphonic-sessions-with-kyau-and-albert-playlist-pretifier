@@ -3,7 +3,7 @@ Take a playlist from Euphonic Sessions with Kyay & Albert episode (from soundclo
 
 ### How to use?
 
- 1. Clone the repository or download a [zip version](https://github.com/chepe263/euphonic-sessions-with-kyau-and-albert-playlist-pretifier/archive/master.zip)
+ 1. Clone the repository or download a [zip version](https://github.com/chepe263/euphonic-sessions-with-kyau-and-albert-playlist-pretifier/archive/master.zip), unpack it adn run `npm install`
  2. Obtain a playlist from an episode on [Soundcloud](https://soundcloud.com/euphonicsessions)
  3. Create a text file named `input.txt` on the same place where `index.js` is located.
  4. Inside `input.txt` paste the unformatted playlist.
