@@ -1,4 +1,7 @@
-module.exports =  function(contents){
+
+
+//module.exports =  
+function pretty(contents){
     var playlist_items = contents.split(/\r?\n/g);
     var found_close_parenthesis = false;
     var track_of_the_month = -1;
@@ -38,3 +41,7 @@ module.exports =  function(contents){
     }
     return playlist_items.join("\r\n");
 };
+
+try {
+    module.exports = exports = pretty;
+ } catch (e) {}
