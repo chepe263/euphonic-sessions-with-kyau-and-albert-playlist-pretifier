@@ -1,17 +1,13 @@
-﻿const pretty = require("./playlist-pretifier")
-const fs = require("fs");
+﻿const express = require('express')
+const app = express()
+const port = process.env.HTTP_PORT || 3000
 
-try {
-	if(fs.existsSync('input.txt')) {
-		var contents = fs.readFileSync('input.txt', 'utf8');
-		
-		var new_playlist = pretty(contents);
-		console.log(new_playlist);
-		fs.writeFileSync('output.txt', new_playlist);
-		console.log("\r\n");
-    } else {
-		console.log('The file [input.txt] does not exist.');
-	}
-} catch (err) {
-    console.error(err);
-}
+app.use(express.static('public'))
+
+app.get('/', (req, res) => {
+  res.send('Hello World!')
+})
+
+app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
