@@ -1,0 +1,26 @@
+{
+  "name": "prettier-euphonic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc --build",
+    "clean": "npx tsc --build --clean",
+    "start": "npx tsc --build && node ./dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/node": "^20.11.13",
+    "dotenv": "^16.4.1",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@types/mocha": "^10.0.6",
+    "axios": "^1.6.7",
+    "lodash": "^4.17.21",
+    "soundcloud.ts": "^0.5.2"
+  }
+}
